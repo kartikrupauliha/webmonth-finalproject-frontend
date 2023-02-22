@@ -6,32 +6,32 @@ const cardData = [{
         id: 1
     },
     {
-        heading: "heading1",
+        heading: "heading2",
         content: "gsdfsfsdfdfsfds",
         id: 2
     },
     {
-        heading: "heading1",
+        heading: "heading3",
         content: "gsdfsfsdfdfsfds",
         id: 3
     },
     {
-        heading: "heading1",
+        heading: "heading4",
         content: "gsdfsfsdfdfsfds",
         id: 4
     },
     {
-        heading: "heading1",
+        heading: "heading5",
         content: "gsdfsfsdfdfsfds",
         id: 5
     },
     {
-        heading: "heading1",
+        heading: "heading6",
         content: "gsdfsfsdfdfsfds",
         id: 6
     },
     {
-        heading: "heading1",
+        heading: "heading7",
         content: "gsdfsfsdfdfsfds",
         id: 7
     },
@@ -49,7 +49,7 @@ const createNotes = (array) => {
         card.classList.add("card");
         card.id = id;
 
-        const insideHtml = `<div class="card-header"><div class="card-heading">${heading}</div><div class="edit-note"><img src="../../assets/edit-note.svg" /></div></div><div class="card-content">${content}</div>`
+        const insideHtml = `<div class="card-header"><div class="card-heading">${heading}</div><a href="../updateNotes/updateNotes.html?noteId=${id}"><div class="edit-note"><img src="../../assets/edit-note.svg" alt="" /></div></a></div><div class="card-content">${content}</div>`
 
         card.innerHTML = insideHtml;
         cardContainer.appendChild(card);
